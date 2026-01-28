@@ -10,15 +10,24 @@ window.onload = function() {
   console.log("Domain Name Generator by Hodgson Dev LLC");
 
   // Mostrar todas las combinaciones en consola
+ 
   for (let i = 0; i < pronoun.length; i++) {
     for (let j = 0; j < adj.length; j++) {
       for (let k = 0; k < noun.length; k++) {
         let domain = pronoun[i] + adj[j] + noun[k] + ".com";
-        console.log(domain);
       }
     }
   }
 
+/*
+for (const i in pronoun) {
+    for (const j in adj){
+        for (const k in noun) {
+            console.log(pronoun[i] + adj[j] + noun[k] + ".com");
+        }
+    }
+  }
+*/
   // Generar el primer dominio inmediatamente
   generateDomainNames();
   
